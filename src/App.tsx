@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.scss';
 import ArticleCard from './components/Cards/ArticleCard/ArticleCard';
 import FeaturedCard from './components/Cards/FeaturedCard/FeaturedCard';

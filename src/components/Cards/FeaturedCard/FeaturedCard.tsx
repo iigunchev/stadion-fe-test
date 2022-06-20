@@ -1,7 +1,8 @@
+import React from 'react';
 import './FeaturedCard.scss';
 
-const FeaturedCard = () => {
+function FeaturedCard() {
   return <article className="featuredCard__container">Featured Card</article>;
-};
+}
 
 export default FeaturedCard;

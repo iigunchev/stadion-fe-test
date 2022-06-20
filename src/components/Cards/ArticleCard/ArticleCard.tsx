@@ -1,7 +1,10 @@
+import React from 'react';
 import './ArticleCard.scss';
 
-const ArticleCard = () => {
-  return <article className="card">Article Card</article>;
-};
-
-export default ArticleCard;
+export default function ArticleCard() {
+  return (
+    <article className="card">
+      <span>Article</span>
+    </article>
+  );
+}
