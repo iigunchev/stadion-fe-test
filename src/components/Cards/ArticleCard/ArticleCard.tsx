@@ -13,12 +13,7 @@ function ArticleCard({ url, image, title, category, date }: CardProps) {
   };
   return (
     <article className="card__container">
-      <div
-        role="link"
-        onClick={() => navigate(url)}
-        tabIndex={0}
-        onKeyPress={onKeyPressHandler}
-      >
+      <a href={url} tabIndex={0} onKeyPress={onKeyPressHandler}>
         <img src={image} alt="" className="articleCard__image" />
         <div className="articleCard__category__container">
           <Link to={`/${category}`} className="articleCard__category">
@@ -27,7 +22,7 @@ function ArticleCard({ url, image, title, category, date }: CardProps) {
         </div>
         <h3 className="articleCard__title">{title}</h3>
         <span>{dateTransform(date)}</span>
-      </div>
+      </a>
     </article>
   );
 }

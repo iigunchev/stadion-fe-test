@@ -5,6 +5,7 @@
   padding: 0 2em;
   text-align: left;
   position: relative;
+  color: white;
 }
 .galleryCard__icon {
   position: absolute;
@@ -17,7 +18,6 @@
 }
 .galleryCard__category {
   text-decoration: none;
-  color: white;
   font-weight: bold;
 }
 .galleryCard__category__container {

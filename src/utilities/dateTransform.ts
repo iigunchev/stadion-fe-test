@@ -11,7 +11,8 @@ function toMonthName(monthNumber: string | undefined) {
     .toUpperCase();
 }
 
-function dateTransform(date: string) {
+function dateTransform(date: string | undefined) {
+  if (date === undefined) return '';
   const dateArray = date.split('/');
   const month = toMonthName(dateArray[1]);
   const day = dateArray[0];

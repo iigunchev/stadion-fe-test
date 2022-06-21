@@ -4,6 +4,7 @@ import { CardProps } from '../../../interfaces/data';
 import galleryIcon from '../../../assets/gallery-icon.svg';
 import videoIcon from '../../../assets/video-icon.svg';
 import './GalleryCard.scss';
+import dateTransform from '../../../utilities/dateTransform';
 
 function GalleryCard({ url, image, title, category, date, type }: CardProps) {
   const navigate = useNavigate();
@@ -23,8 +24,8 @@ function GalleryCard({ url, image, title, category, date, type }: CardProps) {
         minHeight: '100%',
       }}
     >
-      <div
-        role="link"
+      <a
+        href={url}
         onClick={() => navigate(url)}
         tabIndex={0}
         onKeyPress={onKeyPressHandler}
@@ -41,9 +42,9 @@ function GalleryCard({ url, image, title, category, date, type }: CardProps) {
             </Link>
           </div>
           <h3 className="articleCard__title">{title}</h3>
-          <span>{date}</span>
+          <span>{dateTransform(date)}</span>
         </div>
-      </div>
+      </a>
     </article>
   );
 }
