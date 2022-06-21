@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
-import Card from './components/Card/Card';
-import FeaturedCard from './components/Card/FeaturedCard/FeaturedCard';
+import Card from './components/Cards/Card';
+import FeaturedCard from './components/Cards/FeaturedCard/FeaturedCard';
 import Grid from './components/Layout';
 import { CardProps } from './interfaces/data';
 import data from './data/mockdata';

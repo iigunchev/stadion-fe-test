@@ -1,0 +1,33 @@
+.gallery__container {
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 0 2em;
+  text-align: left;
+  position: relative;
+}
+.galleryCard__icon {
+  position: absolute;
+  right: 2em;
+  top: 3em;
+}
+.galleryCard__info {
+  position: absolute;
+  bottom: 32px;
+}
+.galleryCard__category {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.galleryCard__category__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 106px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 15px;
+  border: 1px solid white;
+}
