@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CardProps } from '../../../interfaces/data';
+import dateTransform from '../../../utilities/dateTransform';
 import './ArticleCard.scss';
 
 function ArticleCard({ url, image, title, category, date }: CardProps) {
@@ -25,7 +26,7 @@ function ArticleCard({ url, image, title, category, date }: CardProps) {
           </Link>
         </div>
         <h3 className="articleCard__title">{title}</h3>
-        <span>{date}</span>
+        <span>{dateTransform(date)}</span>
       </div>
     </article>
   );
