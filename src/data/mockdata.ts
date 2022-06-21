@@ -104,10 +104,7 @@ const data: CardProps[] = [
   {
     id: 11,
     label: 'promo',
-    title: 'Epicurus in armatum hostem impetum fecisse',
-    backgroundImage: 'Epicurus in armatum hostem impetum fecisse',
-    image:
-      'https://images.unsplash.com/photo-1573056019991-590821ff5438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJ1Z2J5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+    title: 'Official home kit',
     url: 'https://www.rugby.com',
   },
   {

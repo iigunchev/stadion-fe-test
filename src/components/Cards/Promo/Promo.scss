@@ -1,0 +1,31 @@
+.promo__container {
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  h4 {
+    font-size: 60px;
+    letter-spacing: -1.25px;
+    line-height: 55.53px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 1em;
+  }
+  h6 {
+    margin: 0;
+    color: black;
+    font-size: 19.2px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: bold;
+  }
+}
+.image__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
