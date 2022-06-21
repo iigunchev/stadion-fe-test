@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.scss';
-import ArticleCard from './components/Cards/ArticleCard/ArticleCard';
-import FeaturedCard from './components/Cards/FeaturedCard/FeaturedCard';
+import Card from './components/Card/Card';
+import FeaturedCard from './components/Card/FeaturedCard/FeaturedCard';
 import Grid from './components/Layout';
+import { CardProps } from './interfaces/data';
+import data from './data/mockdata';
 
 function App() {
   return (
@@ -10,12 +12,8 @@ function App() {
       <main className="main__container">
         <FeaturedCard />
         <Grid>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
+          {data
+            && data.map((card: CardProps) => <Card key={card.id} card={card} />)}
         </Grid>
       </main>
     </div>

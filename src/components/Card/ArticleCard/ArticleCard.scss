@@ -1,0 +1,38 @@
+.card__container {
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2em;
+}
+.articleCard__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.articleCard__category__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 106px;
+  margin-top: 10px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 15px;
+  border: 1px solid black;
+}
+.articleCard__category {
+  text-decoration: none;
+}
+.articleCard__title {
+  font-size: 1.75rem;
+  line-height: 36px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.articleCard__date {
+  color: rgba(0,0,0,0.6);
+}
